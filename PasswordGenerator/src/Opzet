@@ -3,4 +3,31 @@ Bedoeling van passwordGenerator
 Vraagt aan user hoeveel  tekens wachtwoord moet worden
 
 Met deze input wordt methode/class aangeroepen, die input als parameter heeft
-Methode/class
+
+Class1 heeft:
+- arraylist met alle cijfers
+- arraylist met alle letters kleine letters
+- list met alle letters hoofdletters
+- arraylist met symbolen
+- arraylist van de arraylists
+
+                GEDAAN
+
+Class 2:
+checkt input:
+- minimaal 4
+- maximaal 30
+- anders melding geven
+- input opslaan in var
+
+                HIER NU MEE BEZIG. BEZIG MET SCANNER. OPZOEKEN WAAROM IK NIET KAN TYPEN ZOALS DE VORIGE KEER
+
+
+Class3 heeft:
+- een lege wachtwoordstring
+- Loop met:
+    - "input" aantal keer random list uit de 'arraylist van arraylists' kiezen
+    - uit die gekozen list een random teken teruggeven als string aan lege wachtwoordstring
+- nu gevulde wachtwoordstring teruggeven als output
+
+
