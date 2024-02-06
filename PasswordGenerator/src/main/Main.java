@@ -5,7 +5,7 @@ public class Main {
         Loopdieloop loopdieloop = new Loopdieloop();
         lists.addAlleLijsten();
 
-        loopdieloop.generatePassword(12, loopdieloop.randomMethod(lists.getAlleLijsten()), loopdieloop.randomMethod() );
+//        loopdieloop.generatePassword(12, loopdieloop.randomMethod(lists.getAlleLijsten()), loopdieloop.randomMethod() );
 
     }
 }

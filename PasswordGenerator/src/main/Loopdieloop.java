@@ -10,6 +10,10 @@ public class Loopdieloop {
         return rand.nextInt((lijst.length));
     }
 
+    public void randomMethod(){
+        System.out.println("test");
+    }
+
     //Gives a random number between 0 and the lenght of the list given as parameter
     public int randomMethod(List lijst){
         Random rand = new Random();
