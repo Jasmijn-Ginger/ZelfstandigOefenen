@@ -25,6 +25,7 @@ checkt input:
 
 Class3 heeft:
 - een lege wachtwoordstring
+- random methode met parameter lijst
 - Loop met:
     - "input" aantal keer random list uit de 'arraylist van arraylists' kiezen
     - uit die gekozen list een random teken teruggeven als string aan lege wachtwoordstring
