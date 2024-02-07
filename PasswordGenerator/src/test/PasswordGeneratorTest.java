@@ -24,9 +24,21 @@ class PasswordGeneratorTest {
 
     @Test
     void generateSecurePasswordTest(){
-        Assertions.assertEquals(12, passwordGenerator.getSecurePassword(12).length());
+        Assertions.assertEquals(12, passwordGenerator.getSecurePassword(4).length());
+    }
+
+    @Test
+    void testPasswords(){
+        System.out.println(passwordGenerator.getSecurePassword(10));
+        System.out.println(passwordGenerator.getSecurePassword(8));
+        System.out.println(passwordGenerator.getSecurePassword(7));
+        System.out.println(passwordGenerator.getSecurePassword(6));
+        System.out.println(passwordGenerator.getSecurePassword(5));
+        System.out.println(passwordGenerator.getSecurePassword(4));
+        System.out.println(passwordGenerator.getSecurePassword(12));
 
     }
+
 
 //
 

@@ -7,6 +7,11 @@ public class Security {
     private int numbersInPassword;
     private int symbolsInPassword;
     public void checkIfPasswordIsSecure(String passWord){
+        smallLettersInPassword = 0;
+        bigLettersInPassword = 0;
+        numbersInPassword = 0;
+        symbolsInPassword = 0;
+
         /*checks to see if there are small letters in pw:
             -if there are it moves on to the next list: big letters
             -if there aren't any the password isn't safe: passWordIsSecure will be false and the loop stops.
@@ -74,7 +79,7 @@ public class Security {
         if (symbolsInPassword == 0) {
             passWordIsSecure = false;
         }
-
+        else{passWordIsSecure = true;}
 
     }
 }

@@ -2,11 +2,15 @@ import java.util.Scanner;
 
 public class InputUser {
 
-    private static Scanner scanner = new Scanner(System.in);
+    private static final Scanner SCANNER = new Scanner(System.in);
 
-    public static int getInputUser() {
-        System.out.println("How many characters do you want your password to contain? ");
-        int input = scanner.nextInt();
-        return input;
+    public static int askAmountOfCharacters() {
+        System.out.println("How many characters do you want your password to contain? It must be at least 4.");
+        return SCANNER.nextInt();
+    }
+
+    public static String askRepeat(){
+        System.out.println("Do you want another password? ");
+        return SCANNER.next();
     }
 }

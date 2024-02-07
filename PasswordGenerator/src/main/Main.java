@@ -5,7 +5,17 @@ public class Main {
         PasswordGenerator passwordGenerator = new PasswordGenerator();
         lists.addAlleLijsten();
 
-        System.out.println("Jouw gekozen wachtwoord is: " + passwordGenerator.getSecurePassword(16));
+        int number = InputUser.askAmountOfCharacters();
+
+        System.out.println("Your random password is: " + passwordGenerator.getSecurePassword(number));
+        String again = InputUser.askRepeat();
+        while (again.equals("yes") || again.equals("Yes") || again.equals("YES")){
+            int number2 = InputUser.askAmountOfCharacters();
+            System.out.println("Your random password is: " + passwordGenerator.getSecurePassword(number2));
+            again = InputUser.askRepeat();
+        }
+        System.out.println("Byebye");
+
 
 
     }

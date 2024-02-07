@@ -27,6 +27,7 @@ public class PasswordGenerator {
     }
 
     public String getSecurePassword(int numberOfCharacters){
+        tempPassword.delete(0, tempPassword.length());
         generateTempPassword(numberOfCharacters);
         security.checkIfPasswordIsSecure(String.valueOf(tempPassword));
         while (!security.passWordIsSecure){
