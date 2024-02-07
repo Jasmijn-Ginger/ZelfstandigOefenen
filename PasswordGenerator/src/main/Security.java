@@ -2,10 +2,10 @@ public class Security {
 
     Lists lists = new Lists();
     boolean passWordIsSecure = true;
-    int smallLettersInPassword;
-    int bigLettersInPassword;
-    int numbersInPassword;
-    int symbolsInPassword;
+    private int smallLettersInPassword;
+    private int bigLettersInPassword;
+    private int numbersInPassword;
+    private int symbolsInPassword;
     public void checkIfPasswordIsSecure(String passWord){
         /*checks to see if there are small letters in pw:
             -if there are it moves on to the next list: big letters
@@ -13,7 +13,7 @@ public class Security {
          */
         for (int i = 0; i < lists.getListTinyLetters().length; i++) {
             String var = String.valueOf(lists.getListTinyLetters()[i]);
-            if (passWord.toString().contains(var)) {
+            if (passWord.contains(var)) {
                 smallLettersInPassword++;
             }
             if (smallLettersInPassword > 0) {
@@ -30,7 +30,7 @@ public class Security {
          */
         for (int i = 0; i < lists.getListBigLetters().length; i++) {
             String var = String.valueOf(lists.getListBigLetters()[i]);
-            if (passWord.toString().contains(var)) {
+            if (passWord.contains(var)) {
                 bigLettersInPassword++;
             }
             if (bigLettersInPassword > 0) {
@@ -47,7 +47,7 @@ public class Security {
          */
         for (int i = 0; i < lists.getListNumbers().length; i++) {
             String var = String.valueOf(lists.getListNumbers()[i]);
-            if (passWord.toString().contains(var)) {
+            if (passWord.contains(var)) {
                 numbersInPassword++;
             }
             if (numbersInPassword > 0) {
@@ -64,7 +64,7 @@ public class Security {
          */
         for (int i = 0; i < lists.getListSymbols().length; i++) {
             String var = String.valueOf(lists.getListSymbols()[i]);
-            if (passWord.toString().contains(var)) {
+            if (passWord.contains(var)) {
                 symbolsInPassword++;
             }
             if (symbolsInPassword > 0) {
@@ -73,7 +73,6 @@ public class Security {
         }
         if (symbolsInPassword == 0) {
             passWordIsSecure = false;
-            return;
         }
 
 

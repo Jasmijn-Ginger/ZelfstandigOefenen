@@ -28,7 +28,7 @@ class ListsTest {
         for (int i = 0; i < lijsten.getListNumbers().length; i++){
             checkingcontent += lijsten.getListNumbers()[i];
         }
-        Assertions.assertEquals("123456789", checkingcontent);
+        Assertions.assertEquals("0123456789", checkingcontent);
     }
 
     @Test
@@ -43,6 +43,6 @@ class ListsTest {
     @Test
     void getAlleLijstenTest(){
        lijsten.addAlleLijsten();
-        Assertions.assertTrue(lijsten.getAlleLijsten().size()==4);
+        Assertions.assertEquals(4, lijsten.getAlleLijsten().size());
     }
 }

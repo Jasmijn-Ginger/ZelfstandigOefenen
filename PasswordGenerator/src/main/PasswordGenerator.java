@@ -1,11 +1,10 @@
 import java.util.Random;
 
 public class PasswordGenerator {
-    Lists lists = new Lists();
     Security security = new Security();
     Random rand = new Random();
     StringBuilder tempPassword = new StringBuilder();
-    char[] lijst;
+    private char[] lijst;
 
     //For test purposes only: chooses character based on parameters
     public char chooseRandomCharacter(int number1, int number2){
@@ -27,7 +26,7 @@ public class PasswordGenerator {
         }
     }
 
-    public void getSecurePassword(int numberOfCharacters){
+    public String getSecurePassword(int numberOfCharacters){
         generateTempPassword(numberOfCharacters);
         security.checkIfPasswordIsSecure(String.valueOf(tempPassword));
         while (!security.passWordIsSecure){
@@ -37,6 +36,7 @@ public class PasswordGenerator {
             }
             security.checkIfPasswordIsSecure(String.valueOf(tempPassword));
         }
+        return String.valueOf(tempPassword);
     }
 
 

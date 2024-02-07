@@ -14,7 +14,7 @@ class PasswordGeneratorTest {
     @Test
     void generatePasswordTest(){
         passwordGenerator.generateTempPassword(16);
-        Assertions.assertTrue(passwordGenerator.tempPassword.length()==16);
+        Assertions.assertEquals(16, passwordGenerator.tempPassword.length());
     }
 
     @Test
@@ -23,9 +23,9 @@ class PasswordGeneratorTest {
     }
 
     @Test
-    void wallOfDefenceTest(){
-        passwordGenerator.getSecurePassword(12);
-        System.out.println(passwordGenerator.tempPassword);
+    void generateSecurePasswordTest(){
+        Assertions.assertEquals(12, passwordGenerator.getSecurePassword(12).length());
+
     }
 
 //
