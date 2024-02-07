@@ -13,4 +13,6 @@ public class InputUser {
         System.out.println("Do you want another password? ");
         return SCANNER.next();
     }
+
+    //ToDo write tests for this class
 }
