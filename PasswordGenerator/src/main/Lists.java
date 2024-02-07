@@ -3,28 +3,28 @@ import java.util.List;
 
 public class Lists {
 //lijsten van de verschillende getallen, symbolen en letters + hun getters
-    private final char[] listTinyLetters = "abcdefghijklmnopqrstuvwxyz".toCharArray();
-    private final char[] listBigLetters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().toCharArray();
-    private final char[] listNumbers = "0123456789".toCharArray();
-    private final char[] listSymbols = "-_*%$#@!&".toCharArray();
+    private static final char[] LIST_TINY_LETTERS = "abcdefghijklmnopqrstuvwxyz".toCharArray();
+    private static final char[] LIST_BIG_LETTERS = "abcdefghijklmnopqrstuvwxyz".toUpperCase().toCharArray();
+    private static final char[] LIST_NUMBERS = "0123456789".toCharArray();
+    private static final char[] LIST_SYMBOLS = "-_*%$#@!&".toCharArray();
 
     public static List<char[]> alleLijsten = new ArrayList<>();
 
 
     public char[] getListTinyLetters(){
-        return listTinyLetters;
+        return LIST_TINY_LETTERS;
     }
 
     public char[] getListBigLetters(){
-        return listBigLetters;
+        return LIST_BIG_LETTERS;
     }
 
     public char[] getListNumbers() {
-        return listNumbers;
+        return LIST_NUMBERS;
     }
 
     public char[] getListSymbols() {
-        return listSymbols;
+        return LIST_SYMBOLS;
     }
 
     //voegt alle 4 bestaande lijsten toe aan de hoofdlijst

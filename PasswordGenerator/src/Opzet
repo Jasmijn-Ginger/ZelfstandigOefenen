@@ -31,4 +31,11 @@ Class3 heeft:
     - uit die gekozen list een random teken teruggeven als string aan lege wachtwoordstring
 - nu gevulde wachtwoordstring teruggeven als output
 
+                GEDAAN, ZIJ HET ANDERS DAN OPZET
+
+Aanvulling:
+checken of er wel van iedere categorie minimaal 1 character in zit
+dit zou kunnen door
+    - klaar wachtwoord bekijken en als hij daar niet aan voldoet een nieuw wachtwoord aanmaken
+    -
 

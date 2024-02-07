@@ -4,8 +4,8 @@ public class Main {
         Lists lists = new Lists();
         Loopdieloop loopdieloop = new Loopdieloop();
         lists.addAlleLijsten();
-
-        System.out.println(loopdieloop.generatePassword(12));
+//
+//        System.out.println(loopdieloop.generatePassword(12));
 
     }
 }
