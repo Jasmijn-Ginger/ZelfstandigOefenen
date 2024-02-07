@@ -3,42 +3,33 @@ import java.util.Random;
 
 public class Loopdieloop {
 
+    char[] lijst;
+    char character;
 
-    //Gives a random number between 0 and the lenght of the list given as parameter
-    public int randomMethod(char[] lijst){
-        Random rand = new Random();
-        return rand.nextInt((lijst.length));
+    Random rand = new Random();
+
+    //For test purposes only: chooses character based on parameters
+    public void chooseRandomCharacter(int number1, int number2){
+        lijst = Lists.alleLijsten.get(number1);
+        character = lijst[number2];
     }
 
-    public void randomMethod(){
-        System.out.println("test");
+    //chooses character based on random
+    private void chooseRandomCharacter(){
+        lijst = Lists.alleLijsten.get(rand.nextInt(Lists.alleLijsten.size()));
+        character = lijst[rand.nextInt(lijst.length)];
     }
 
-    //Gives a random number between 0 and the lenght of the list given as parameter
-    public int randomMethod(List lijst){
-        Random rand = new Random();
-        return rand.nextInt((lijst.size()));
-    }
 
-    //Returns a list with either letters, capitals, symbols or numbers
-    public char[] chooseList(int randomNumber){
-        return Lists.alleLijsten.get(randomNumber);
-    }
-
-    //Returns a random character
-    public String chooseCharacter(int randomNumber, char[] lijst){
-        return new String(String.valueOf(lijst[randomNumber]));
-    }
-
-//    Generates a password containing different characters, in the asked lenght
-    public String generatePassword(int numberOfCharacters, int randomNumber1, int randomNumber2){
+//    Generates a password containing different characters, in the asked length
+    public String generatePassword(int numberOfCharacters){
         String wachtwoord = "";
         for (int i=0; i < numberOfCharacters; i++){
-            wachtwoord += chooseList(randomNumber1)[randomNumber2];
+            chooseRandomCharacter();
+            wachtwoord += character;
         }
         return wachtwoord;
     }
 
-    //and testing here as well
 
 }

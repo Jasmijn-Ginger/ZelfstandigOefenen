@@ -5,7 +5,7 @@ public class Lists {
 //lijsten van de verschillende getallen, symbolen en letters + hun getters
     private final char[] listTinyLetters = "abcdefghijklmnopqrstuvwxyz".toCharArray();
     private final char[] listBigLetters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().toCharArray();
-    private final char[] listNumbers = "123456789".toCharArray();
+    private final char[] listNumbers = "0123456789".toCharArray();
     private final char[] listSymbols = "-_*%$#@!&".toCharArray();
 
     public static List<char[]> alleLijsten = new ArrayList<>();

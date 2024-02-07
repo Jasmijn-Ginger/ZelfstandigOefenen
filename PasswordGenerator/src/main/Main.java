@@ -1,11 +1,11 @@
 
 public class Main {
     public static void main(String[] args) {
-       Lists lists = new Lists();
+        Lists lists = new Lists();
         Loopdieloop loopdieloop = new Loopdieloop();
         lists.addAlleLijsten();
 
-//        loopdieloop.generatePassword(12, loopdieloop.randomMethod(lists.getAlleLijsten()), loopdieloop.randomMethod() );
+        System.out.println(loopdieloop.generatePassword(12));
 
     }
 }
