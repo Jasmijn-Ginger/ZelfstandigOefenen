@@ -14,5 +14,5 @@ public class InputUser {
         return SCANNER.next();
     }
 
-    //ToDo write tests for this class
+//ToDo put an exception when input isn't valid
 }

@@ -24,7 +24,7 @@ class PasswordGeneratorTest {
 
     @Test
     void generateSecurePasswordTest(){
-        Assertions.assertEquals(12, passwordGenerator.getSecurePassword(4).length());
+        Assertions.assertEquals(12, passwordGenerator.getSecurePassword(12).length());
     }
 
     @Test
