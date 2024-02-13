@@ -8,6 +8,7 @@
       <sourceFolder url="file://$MODULE_DIR$/PasswordGenerator/src/test" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/DAOpractice/src/main" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/DAOpractice/src/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Lambda/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -7,9 +7,7 @@ class PasswordGeneratorTest {
     static Lists lists = new Lists();
     PasswordGenerator passwordGenerator = new PasswordGenerator();
 
-    @BeforeAll
-    static void addLists(){
-            lists.addAlleLijsten();}
+
 
     @Test
     void generatePasswordTest(){

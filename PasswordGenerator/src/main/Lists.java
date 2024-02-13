@@ -8,7 +8,7 @@ public class Lists {
     private static final char[] LIST_NUMBERS = "0123456789".toCharArray();
     private static final char[] LIST_SYMBOLS = "-_*%$#@!&".toCharArray();
 
-    public static List<char[]> alleLijsten = new ArrayList<>();
+    public static final List<char[]> ALLE_LIJSTEN = List.of(LIST_TINY_LETTERS, LIST_BIG_LETTERS, LIST_NUMBERS, LIST_SYMBOLS);
 
 
     public char[] getListTinyLetters(){
@@ -25,18 +25,6 @@ public class Lists {
 
     public char[] getListSymbols() {
         return LIST_SYMBOLS;
-    }
-
-    //voegt alle 4 bestaande lijsten toe aan de hoofdlijst
-    public void addAlleLijsten(){
-        alleLijsten.add(getListTinyLetters());
-        alleLijsten.add(getListBigLetters());
-        alleLijsten.add(getListNumbers());
-        alleLijsten.add(getListSymbols());
-    }
-
-    public List getAlleLijsten(){
-        return alleLijsten;
     }
 
 

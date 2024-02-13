@@ -13,7 +13,7 @@ public class InputUser {
     //asks in terminal if you want another password
     public static String askRepeat(){
         System.out.println("Do you want another password? ");
-        return SCANNER.next();
+        return SCANNER.next().toLowerCase();
     }
 
 //ToDo put an exception when input isn't valid

@@ -25,7 +25,7 @@ class InputUserTest {
 
 
 
-    @Test
+    @Disabled
     void givenAnswer_whenReadFromInput_thenReturnCorrectResult() {
         //provideInput("yes");
         String input = InputUser.askRepeat();

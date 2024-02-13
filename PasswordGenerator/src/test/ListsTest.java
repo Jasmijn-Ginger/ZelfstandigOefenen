@@ -40,9 +40,5 @@ class ListsTest {
         Assertions.assertEquals("-_*%$#@!&", checkingcontent);
     }
 
-    @Test
-    void getAlleLijstenTest(){
-       lijsten.addAlleLijsten();
-        Assertions.assertEquals(4, lijsten.getAlleLijsten().size());
-    }
+
 }

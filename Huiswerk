@@ -1,0 +1,28 @@
+Research and practice Lambda expressions
+                        Optionals
+                        Consumer
+                        Runnable, Supplier, Consumer
+                        ActionListener
+                        Predicate
+                        IntBinaryOperator
+                        functional interfaces
+                        Consumer
+                        Predicate
+                        Function
+                        Supplier
+                        Callable
+
+                        Diamond operator: parameterized types: generics
+
+                        :: Method reference
+
+                        stream
+
+                        collections
+
+
+
+Fix PasswordGenerator:
+security in losse methods
+var voor aantal tekens, bijv 3 kleine letters
+nog maar 1 boolean gebruiken. Bol passwordIsSecure niet nodig.
