@@ -1,10 +1,8 @@
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 class PasswordGeneratorTest {
 
-    static Lists lists = new Lists();
     PasswordGenerator passwordGenerator = new PasswordGenerator();
 
 
