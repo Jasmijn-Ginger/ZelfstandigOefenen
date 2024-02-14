@@ -12,33 +12,41 @@ class SecurityTest {
     String tempPassword4 = "skie85IKLK";
 
     @Test
+    void falseSmallLettersTest(){
+        Assertions.assertFalse(security.charinPassWord(Lists.LIST_TINY_LETTERS, tempPassword1));
+    }
+
+    @Test
+    void trueSmallLettersTest(){
+        Assertions.assertTrue(security.charinPassWord(Lists.LIST_TINY_LETTERS, tempPassword2));
+    }
+
+
+
+
+    @Test
     void shouldBeSecure(){
-        security.checkIfPasswordIsSecure(tempPassword0);
-        Assertions.assertTrue(security.passWordIsSecure);
+        Assertions.assertTrue(security.checkIfPasswordIsSecure(tempPassword0));
     }
 
     @Test
     void shoudNotBeSecure(){
-        security.checkIfPasswordIsSecure(tempPassword1);
-        Assertions.assertFalse(security.passWordIsSecure);
+        Assertions.assertFalse(security.checkIfPasswordIsSecure(tempPassword1));
     }
 
     @Test
     void shouldNotBeSecure2(){
-        security.checkIfPasswordIsSecure(tempPassword2);
-        Assertions.assertFalse(security.passWordIsSecure);
+        Assertions.assertFalse(security.checkIfPasswordIsSecure(tempPassword2));
     }
 
     @Test
     void shouldNotBeSecure3(){
-        security.checkIfPasswordIsSecure(tempPassword3);
-        Assertions.assertFalse(security.passWordIsSecure);
+        Assertions.assertFalse(security.checkIfPasswordIsSecure(tempPassword3));
     }
 
     @Test
     void shouldNotBeSecure4(){
-        security.checkIfPasswordIsSecure(tempPassword4);
-        Assertions.assertFalse(security.passWordIsSecure);
+        Assertions.assertFalse(security.checkIfPasswordIsSecure(tempPassword4));
     }
 
 

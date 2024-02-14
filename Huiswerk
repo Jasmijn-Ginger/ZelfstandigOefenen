@@ -1,16 +1,4 @@
-Research and practice Lambda expressions
-                        Optionals
-                        Consumer
-                        Runnable, Supplier, Consumer
-                        ActionListener
-                        Predicate
-                        IntBinaryOperator
-                        functional interfaces
-                        Consumer
-                        Predicate
-                        Function
-                        Supplier
-                        Callable
+Research:
 
                         Diamond operator: parameterized types: generics
 
