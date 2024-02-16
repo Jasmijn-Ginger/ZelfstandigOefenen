@@ -26,18 +26,19 @@ public class PasswordGenerator {
     }
 
     //Generates a temp password. checks if the temp password is secure. If not, it generates another password. If it's secure it return the password as string
-//   public String getSecurePassword(int numberOfCharacters){
-//    //while password  isn't secure: it loops to resetting password, generating new one, and checking if its safe
-//    while (!security.passWordIsSecure){
-//        tempPassword.delete(0, tempPassword.length());
-//        //generates a temp password in an amount of chacters given in parameter
-//        generateTempPassword(numberOfCharacters);
-//        //checks if temp password is secure
-//        security.checkIfPasswordIsSecure(tempPassword.toString());
-//    }
-//    //when password of secure: it returns it as String
-//    return tempPassword.toString();
-//    }
+   public String getSecurePassword(int numberOfCharacters){
+        tempPassword.delete(0, tempPassword.length());
+    //while password  isn't secure: it loops to resetting password, generating new one, and checking if its safe
+    while (!security.checkIfPasswordIsSecure(tempPassword.toString())){
+        tempPassword.delete(0, tempPassword.length());
+        //generates a temp password in an amount of chacters given in parameter
+        generateTempPassword(numberOfCharacters);
+        //checks if temp password is secure
+        security.checkIfPasswordIsSecure(tempPassword.toString());
+    }
+    //when password of secure: it returns it as String
+    return tempPassword.toString();
+    }
 
 
 

@@ -10,24 +10,25 @@ class SecurityTest {
     String tempPassword2 = "ie9sl&57";
     String tempPassword3 = "siK&k_eY";
     String tempPassword4 = "skie85IKLK";
-
-    @Test
-    void falseSmallLettersTest(){
-        Assertions.assertFalse(security.charinPassWord(Lists.LIST_TINY_LETTERS, tempPassword1));
-    }
-
-    @Test
-    void trueSmallLettersTest(){
-        Assertions.assertTrue(security.charinPassWord(Lists.LIST_TINY_LETTERS, tempPassword2));
-    }
-
-
+    String tempPassword5 = "aA9587*%";
+    String tempPassword6 = "b1B*%";
 
 
     @Test
-    void shouldBeSecure(){
+    void shouldBeSecure1(){
         Assertions.assertTrue(security.checkIfPasswordIsSecure(tempPassword0));
     }
+
+    @Test
+    void shouldBeSecure2(){
+        Assertions.assertTrue(security.checkIfPasswordIsSecure(tempPassword5));
+    }
+
+    @Test
+    void shouldBeSecure3(){
+        Assertions.assertTrue(security.checkIfPasswordIsSecure(tempPassword6));
+    }
+
 
     @Test
     void shoudNotBeSecure(){
